@@ -1,0 +1,74 @@
+/* page footer */
+.page-footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    h2.title {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.25px;
+    }
+
+    .cta-subtext {
+        margin-bottom: 1.5rem;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &.page-footer-light {
+        background-color: $white-color;        
+
+        &.post-footer {
+            background-color: $grey-color-5;
+        }
+
+        h2 {
+            color: $secondary;
+        }
+
+        p {
+            color: $grey-color-70;
+        }
+    }    
+
+    &.page-footer-dark {
+        background-color: $secondary; 
+        
+        h2 {
+            color: $white-color;
+        }
+
+        p {
+            color: $grey-color-10;    
+        }
+    }
+
+    &.page-footer-pattern {
+        background-color: $dark-color;
+        background-image: url(../images/dots.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+        padding-top: 7.375rem;
+        padding-bottom: 7.375rem;
+
+        h2 {
+            color: $white-color;
+        }
+
+        p {
+            color: $white-color;
+        }
+    }
+
+    &.page-footer-food_fighter {
+        .btn {
+            box-shadow: 0px 4px 16px rgba(7, 21, 32, 0.2), 0px 3px 14px #FF9C82;
+            -webkit-box-shadow: 0px 4px 16px rgba(7, 21, 32, 0.2), 0px 3px 14px #ccbab6;
+        }
+    }    
+}

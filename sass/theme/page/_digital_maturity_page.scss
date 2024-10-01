@@ -1,0 +1,326 @@
+/*--------------------------------------------------------------
+ * Digital Maturity Page
+ *-------------------------------------------------------------*/
+
+.digital-maturity-page {
+
+    /* Hero Section */
+    .hero {
+        background-color: $secondary;
+        padding-top: 2rem;
+        // padding-top: 6rem;
+		// padding-bottom: 8.875rem;
+
+        @media only screen and (max-width: 767px) {
+            padding-top: 4rem;
+        }
+		
+		position: relative;
+		z-index: 10;
+
+		.graph {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, $secondary 50%, rgba($secondary, 0) 100%);
+		}
+
+        .step {
+            text-align: center;
+            position: relative;
+
+            &.step1 {
+                h2 {
+                    color: $white-color;
+                    font-weight: 600;
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                    letter-spacing: 0.25px;
+                    max-width: 59.375rem;
+                    top: 0.875rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+
+                    span {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .grid {
+                max-width: 70.875rem;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            h2 {
+                position: absolute;
+                width: 100%;
+            }
+        }
+    }
+
+	.dm-fallback-image{
+		position: relative;
+		img {
+			max-width: 1270px;
+		}
+		p {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+    
+    /* Intro Section */
+    .intro {
+        margin: 7.5rem auto;
+		background-color: $grey-color-5;
+
+        .banner-image {
+            left: -5.5rem;
+            position: relative;
+            width: calc(100% + 8.5rem);
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @media only screen and (max-width: 991px) {
+            margin-top: 0;
+
+            .banner-image {
+                justify-content: center;
+                left: 0;
+                width: 100%;
+                border-bottom: 2px solid $grey-color-10;
+            }
+        }
+    }
+
+    /* Services Section */
+    .digital-services {
+		// background: linear-gradient(180deg, rgba($white-color, 0) 0%, $light-blue-color 9.9%, $light-blue-color 86.98%, rgba($white-color, 0) 100%);
+		
+		background-color: #fff;
+        padding-top: 10.75rem;
+        padding-bottom: 10.75rem;
+        position: relative;
+
+		z-index: 50;
+        &:before {
+            content: "";
+			background-size: contain;
+            background-image: url("data:image/svg+xml,%3Csvg width='189' height='253' viewBox='0 0 189 253' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M164 97L174.776 92.3501C175.392 92.07 176.1 92.07 176.654 92.3501L185.921 97L182.196 87.9244C181.98 87.3922 182.073 86.7479 182.473 86.2157L189 77L178.224 81.7339C177.608 82.014 176.9 82.014 176.346 81.7339L167.079 77L170.773 86.2157C170.989 86.7479 170.897 87.3922 170.496 87.9244L164 97Z' fill='%23A1EBEA'/%3E%3Cpath d='M111 32L128.672 24.5602C129.682 24.112 130.844 24.112 131.752 24.5602L146.951 32L140.841 17.479C140.488 16.6274 140.639 15.5966 141.296 14.7451L152 0L134.328 7.57423C133.318 8.02241 132.156 8.02241 131.248 7.57423L116.049 0L122.108 14.7451C122.462 15.5966 122.31 16.6274 121.654 17.479L111 32Z' fill='%23A1EBEA'/%3E%3Cpath d='M0 253L9.48276 249.048C10.0246 248.81 10.6478 248.81 11.1355 249.048L19.2906 253L16.0123 245.286C15.8227 244.833 15.9039 244.286 16.2562 243.833L22 236L12.5172 240.024C11.9754 240.262 11.3522 240.262 10.8645 240.024L2.70936 236L5.96059 243.833C6.15024 244.286 6.06896 244.833 5.71675 245.286L0 253Z' fill='%23A1EBEA'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 8.5rem;
+            bottom: 8.5rem;
+            width: 11.8125rem;
+            height: 15.8125rem;
+        }
+
+        .sub-text {
+            color: $grey-color-70;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                flex: 0 0 100%;
+                max-width: 100%;
+				@media (min-width:768px) {
+					flex: 0 0 50%;
+					max-width: 50%
+				};
+            }
+        }
+    }
+
+    /* Start Bucks Section */
+    .start-bucks {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: left top;
+        padding-top: 8.25rem;
+		padding-bottom: 9.875rem;
+		position: relative;
+		&:before{
+			display: block;
+			content: ' ';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			transform: translateX( 0%);
+			transition: all 2500ms ease;
+			z-index: 5;
+		}
+		&.start-bucks-active:before{
+			transform: translateX( 100%);
+		}
+		.start-bucks-logo {
+			max-width: 300px;
+			margin-bottom: 2rem;
+		}
+		.wrapper{
+			z-index: 10;
+			position: relative;
+		}
+    }
+
+    /* Page Content */
+    .featured-block {
+        .feature-content {
+            ul.list {
+                margin-top: 1rem;
+            }
+
+            .logos {
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+				@media (min-width:768px) {
+					margin-top: 1rem;
+					margin-bottom: 2.5rem;
+				}
+            }
+
+            .callout {
+                background-color: $grey-color-5;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                padding: 1.5rem;
+
+                .callout-icon {
+                    margin-right: 1.875rem;
+                }
+
+                .callout-content {
+                    p {
+                        font-family: $secondary-font;
+                        font-weight: normal;
+                        font-size: 1.25rem;
+                        line-height: 1.75rem;
+                        color: $grey-color-70;
+                        margin-bottom: 0;
+                    }
+                    
+                    a {
+                        font-family: $secondary-font;
+                        font-weight: normal;
+                        font-size: 1.25rem;
+                        line-height: 1.75rem;
+                    }
+                }               
+            }
+        }
+    }
+
+    .list-block {
+        .list-block-header {
+            border-bottom: 2px solid $grey-color-10;
+        }
+
+        .list-block-body {
+            padding-top: 2.5rem;
+        }
+    }
+
+    .intro-block {
+        .featured-image {
+            margin-top: 3.5rem;
+			@media (min-width:768px) {
+				margin-top: 7.5rem;
+			}
+        }
+    }
+
+	.steps-block {
+		margin-top: -50vh;
+	}
+    .customer-quote-block {
+		@media (max-width:768px) {
+			
+			margin-top: 1rem !important;
+		}
+        .block-content {
+            box-shadow: 0 0.25rem 1.25rem rgba($secondary, 0.2);
+            -webkit-box-shadow: 0 0.25rem 1.25rem rgba($secondary, 0.2);
+            border-radius: 1.5rem;
+            margin-bottom: 1.25rem;
+            .customer-quote-content {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+
+                blockquote {
+                    font-size: 1.75rem;
+                    line-height: 2.625rem;
+                }
+    
+                .role {
+                    font-family: $primary-font;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+    
+                    b, strong {
+                        font-weight: 500;
+                    }
+                }      
+            }
+        }
+    }
+
+    .logo-block {
+        padding-bottom: 80px;
+        background-color: $secondary;
+        
+        h2 {
+            color: $white-color !important;
+            margin-bottom: 40px;
+        }
+
+        .logos {
+            display: grid;
+            gap: 24% 8%;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .logo {
+                background-color: $white-color;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 110px;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    padding: 20px
+                }
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .logos {
+                grid-template-columns: 1fr 1fr;
+                gap: 12% 8%;
+                padding-bottom: 40px;
+
+                .logo img {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+body.header-banner-shown.header-type-transparent .digital-maturity-page .hero .wistia_responsive_padding {
+	margin-top: -4rem;
+}

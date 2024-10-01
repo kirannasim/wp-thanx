@@ -1,0 +1,151 @@
+/*--------------------------------------------------------------
+ * Buttons
+ *-------------------------------------------------------------*/
+
+/* Buttons */
+.btn {
+    border: 2px solid transparent;
+    border-radius: 2px;
+    color: $secondary;
+    font-family: $primary-font;    
+    font-weight: 500;
+    line-height: 1;
+    position: relative;
+    overflow: hidden;   
+    z-index: 1;
+    -webkit-transition: color .3s cubic-bezier(.5, 0, .1, 1), border-color .3s cubic-bezier(.5, 0, .1, 1);
+    transition: color .3s cubic-bezier(.5, 0, .1, 1), border-color .3s cubic-bezier(.5, 0, .1, 1);
+    will-change: color, border-color;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        background-color: $secondary;
+        -webkit-transform-origin: top right;
+        transform-origin: top right;
+        width: calc(100% + 2px);
+        -webkit-transform: translate3d(-101%, 0px, 0px);
+        transform: translate3d(-101%, 0px, 0px);
+        -webkit-transition: -webkit-transform .3s cubic-bezier(.5, 0, .1, 1);
+        transition: -webkit-transform .3s cubic-bezier(.5, 0, .1, 1);
+        transition: transform .3s cubic-bezier(.5, 0, .1, 1);
+        transition: transform .3s cubic-bezier(.5, 0, .1, 1), -webkit-transform .3s cubic-bezier(.5, 0, .1, 1);
+        will-change: transform;
+    }
+
+    &:focus,
+    &:hover {
+        border-color: $secondary;
+        color: $white-color;
+
+        &:before {
+            -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+}
+
+.btn-primary {
+    background: $primary;
+    border-color: $primary;
+    box-shadow: 0px 4px 16px rgba($secondary, 0.2), 0px 3px 14px rgba(0, 255, 252, 0.4);  
+    -webkit-box-shadow: 0px 4px 16px rgba($secondary, 0.2), 0px 3px 14px rgba(0, 255, 252, 0.4);    
+    color: $secondary;
+    
+    &:hover {
+        background: $spearmint-color-30;
+        border-color: $spearmint-color-30;
+        color: $secondary;
+    }
+
+    &:before {
+        background-color: $spearmint-color-30;
+    }
+}
+
+.btn-secondary {
+    background: $white-color;
+    border-color: $white-color;
+    color: $secondary;
+
+    &:hover {
+        background: $white-color;
+        border-color: $white-color;
+        color: $white-color;
+    }
+
+    &:before {
+        background-color: $secondary;
+    }
+}
+
+.btn-orange {
+    background: $cayenne-color-50;
+    border-color: $cayenne-color-50;
+    color: $secondary;    
+
+    &:hover {
+        background: rgba($cayenne-color-50, 0.7);
+        border-color: rgba($cayenne-color-50, 0.7);
+        color: $secondary;
+    }
+
+    &:before {
+        background-color: rgba($cayenne-color-50, 0.7);
+    }
+}
+
+.btn-outline-primary {
+    border-color: $primary;
+}
+
+.btn-outline-secondary {
+    border-color: $secondary;
+}
+
+.btn-outline-white {
+    border-color: $white-color;
+    color: $white-color;
+
+    &:before {
+        background-color: $white-color;
+    }
+
+    &:focus,
+    &:hover {
+        border-color: $white-color;
+        color: $secondary;
+    }
+}
+
+.btn-lg {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-cluster {
+    display: flex;
+    justify-content: center;
+
+    & > .btn {
+        margin: 0 20px;
+
+        &:first-child {margin-left: 0;}
+        &:last-child {margin-right: 0;}
+    }
+
+    @media only screen and (max-width: 550px) {
+        max-width: 320px;
+        flex-wrap: wrap;
+        margin: 0 auto 3rem;
+
+        & > .btn {
+            width: 100%;
+            margin: 10px 0 0 !important;
+        }
+    }
+}

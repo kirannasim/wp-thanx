@@ -1,0 +1,59 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+//
+// Color System
+//
+$primary: #13C1BF;
+$secondary: #071520;
+$white-color: #ffffff;
+$black-color: #000000;
+$spearmint-color: #D0F5F5;
+$spearmint-color-20: #A1EBEA;
+$spearmint-color-30: #43D8D6;
+$spearmint-color-40: #0C726F;
+$spearmint-color-50: #13C1BF;
+$spearmint-color-60: #129B9B;
+$spearmint-color-70: #095151;
+$spearmint-color-80: #00C2C0;
+$spearmint-color-90: #052625;
+$dark-color: #0D293F;
+$dark-color-70: #143F63;
+$grey-color: #676E73;
+$grey-color-5: #F5F5F5;
+$grey-color-10: #E5E5E5;
+$grey-color-20: #ccb8b8;
+$grey-color-30: #D4D5D6;
+$grey-color-50: #8C9195;
+$grey-color-60: #B3B7B9;
+$grey-color-70: #424A51;
+$grey-color-80: #31373D;
+$gold-color-10: #F4EBC5;
+$gold-color-20: #FEF4EB;
+$gold-color-50: #D3AD0F;
+$blue-color: #1268B0;
+$blue-color-5: #EEF9FF;
+$blue-color-40: #71A4CF;
+$orange-color-40: #F89533;
+$yellow-color: #FFB718;
+$green-color: #8FD9C9;
+$purple-color-20: #D2CBEA;
+$purple-color-60: #5F3A9B;
+$purple-color-70: #472C74;
+$cayenne-color-50: #FF5A2E;
+$light-color: #EFEFEF;
+$light-blue-color: #E3F9F9;
+$light-cayenne-color: #FFEBE6;
+$light-yellow-color: #FBF8EC;
+$light-purple-color: #F0EDFC;
+$light-orange-color: #FEF4EB;
+//
+// Fonts
+//
+$primary-font: "canada-type-gibson", sans-serif;
+$secondary-font: "Lato", sans-serif;

@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+ * Footer
+ *-------------------------------------------------------------*/
+ #footer-wrapper {
+    background-color: $secondary;
+    color: $white-color;
+    padding: 3em 2.8125rem 4rem;
+
+    @media (max-width: 767px) {
+        padding: 1.5rem 1rem 2rem;
+    }
+}
+
+.footer-links a {
+    color: $white-color;
+    text-decoration: none;
+
+    &:before {
+        display: none;
+    }
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.footer-main {
+    position: relative;
+
+    .navbar-brand {
+        margin-bottom: 1.8125rem;
+    }
+
+    &.wrapper {
+        padding: 0 0 2.875rem;
+
+        @media (max-width: 767px) {
+            padding: 0 0.5rem 3rem;
+        }
+    }
+}
+
+.footer-btns {
+    position: absolute;
+    left: 0.9375rem;
+    bottom: 0;
+
+    .btn:first-child {
+        margin-right: 2.5rem;
+    }
+}
+
+.footer-social {
+    display: flex;
+    margin-top: 3.75rem;
+
+    @media (max-width: 767px) {
+        justify-content: space-around;
+    }
+
+    li:not(:last-child) {
+        margin-right: 1.125rem;
+    }
+}
+
+.footer-bottom {
+    border-top: 2px solid $dark-color;
+    color: $grey-color-50; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	p {
+		margin-bottom: 0;
+	}
+    @media (max-width: 767px) {
+        justify-content: start;
+        flex-direction: column;
+
+        .footer-links,
+        .site-info {
+            width: 100%;
+        }
+
+        .site-info {
+            margin-top: 1.5rem;
+        }
+    }
+
+    .footer-links p,
+    .footer-links a,
+    .copyright {
+        font-family: $secondary-font;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+    }
+
+    &.wrapper {
+        padding: 1.5rem 0 0;
+    }
+}
+
+.footer-widget {
+    padding-top: 1.1875rem;
+
+    @media (max-width: 767px) {
+        margin-bottom: 1.8125rem;
+    }
+
+    .widget-title {
+        color: $primary;
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-links li,
+    .footer-links a {
+        font-family: $secondary-font;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+    }
+
+    .footer-links li:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}

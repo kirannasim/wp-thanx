@@ -1,0 +1,329 @@
+#scroll-slides-carousel-indicators {
+	opacity: 0;
+	position: fixed;
+	left: 5%;
+	top: 50%;
+	list-style: none;
+	margin: 2.85714286rem 0 0;
+	padding: 0;
+	z-index: 999;
+	-webkit-transform: translate(-30%, -50%);
+	transform: translate(-30%, -50%);
+	pointer-events: none;
+	-webkit-transition: all 300ms ease-in-out;
+		 -moz-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			 -o-transition: all 300ms ease-in-out;
+					transition: all 300ms ease-in-out;
+}	
+#scroll-slides-carousel-indicators.active {
+	opacity: 1;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	pointer-events: auto;
+}
+#scroll-slides-carousel-indicators li {
+	margin-bottom: 2.85714286rem;
+}
+
+#scroll-slides-carousel-indicators a {
+	background: rgba(#8C9195, 0.3);
+	display: block;
+	height: 12px;
+	width: 12px;
+	text-indent: -999em;
+	border-radius: 100%;
+}
+#scroll-slides-carousel-indicators a.active {
+	background: #8C9195;
+}
+#scroll-slides-carousel{
+	// background-image: url(https://thanxdev.wpengine.com/wp-content/uploads/2021/01/Frame-112-1.png);
+	// background-size: cover;
+	// background-position: center center;
+	// background-attachment: fixed;
+}
+.scroll-slides-carousel--slide .row{
+	min-height: 100vh;
+}
+
+
+
+
+#scroll-slides-alt-carousel-indicators {
+	opacity: 0;
+	position: fixed;
+	left: 5%;
+	top: 50%;
+	list-style: none;
+	margin: 2.85714286rem 0 0;
+	padding: 0;
+	z-index: 999;
+
+	pointer-events: none;
+	-webkit-transition: all 300ms ease-in-out;
+		 -moz-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			 -o-transition: all 300ms ease-in-out;
+					transition: all 300ms ease-in-out;
+}
+#scroll-slides-alt-carousel-indicators.active{
+	opacity: 1;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	pointer-events: auto;
+}
+
+#scroll-slides-alt-carousel-indicators li {
+	margin-bottom: 2.85714286rem;
+}
+#scroll-slides-alt-carousel-indicators a {
+	background: rgba(#8C9195, 0.3);
+	display: block;
+	height: 12px;
+	width: 12px;
+	text-indent: -999em;
+	border-radius: 100%;
+}
+#scroll-slides-alt-carousel-indicators a.active {
+	background: #8C9195;
+}
+#scroll-slides-alt-carousel {
+	margin: 30vh 0;
+}
+.scroll-slides-alt-carousel--slide {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 10;
+	-webkit-transition: opacity 600ms ease;
+	-o-transition: opacity 600ms ease;
+	transition: opacity 600ms ease;
+	pointer-events: none;
+}
+.scroll-slides-alt-carousel--slide.active {
+	pointer-events: auto;
+	opacity: 1;
+}
+.scroll-slides-alt-carousel--slide--placeholder {
+	min-height: 100vh;
+}
+.scroll-slides-alt-carousel--slide > .t-row {
+	min-height: 100vh;
+	background-repeat: no-repeat;background-position: center; background-size: contain;
+}
+
+
+
+// body.page-template-industry-page {
+// 	#scroll-slides-alt-carousel {
+// 		p {
+// 			text-indent: -90px;
+// 			padding-left: 180px;
+// 		}
+// 		strong {
+// 			font-weight: 700;
+// 			letter-spacing: 1px;
+// 			display: inline-block;
+// 		}
+// 	}
+// }
+
+#scroll-slides-alt-carousel.front-page-slider {
+	margin: 0;
+
+	.row-inner{
+		padding:1.5rem;
+		height: 100vh;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100%;
+		@media (min-width:768px){
+			width: 950px;
+		}
+		@media (min-width:991px) {
+			padding: 15% 0.5rem;
+		}
+	}
+	h2 {
+		color: #fff;
+		max-width: 960px;
+		&.front-page-slider--step-5a {
+			max-width: 900px;
+			font-size: 2.3rem;
+		}
+	}
+	
+}
+
+body.page-template-industry-page #scroll-slides-alt-carousel{
+	.scroll-slides-alt-carousel--slide > .row{
+		min-height: 100vh;
+	}
+}
+
+#scroll-slides-alt-carousel.digital-maturity-slider {
+	margin: 0;
+	.row{
+		background-repeat: no-repeat;
+		background-position: center; 
+		background-size: contain;
+	}
+	.row-inner{
+		padding: 1.5rem 0.5rem;
+		height: 100vh;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100%;
+		@media (min-width:768px){
+			width: 1000px;
+		}
+	}
+	h1, h2, h3, h4, p {
+		color: #fff;
+	}
+	p.h1{
+		font-size: 2.5rem;
+	}
+	// p.h1.h1-l{
+	// 	font-size: 4rem;
+	// 	font-weight: 600;
+	// 	// line-height: 72px;
+	// }
+	@media (min-width:768px) {
+		.row-inner{
+			padding: 15% 0.5rem;
+		}
+		p.h1.h1-l{
+			font-size: 4rem;
+			font-weight: 600;
+			// line-height: 72px;
+		}
+		.slider-half{
+			max-width: 55%;
+		}
+	}
+	#slide-5 p {
+		max-width: 650px;
+	}
+	#slide-9 h2 {
+		max-width: 550px;
+	}
+	// #slide-1-placeholder,
+	// #slide-2-placeholder{
+	// 	min-height: 150vh;
+	// }
+	ul.scroll-slides-alt-carousel--slide--scrollers{
+		max-width: 1000px;
+		width: 100%;
+		padding-left: 0;
+		height: 0;
+		z-index: 30;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		li {
+			padding-left: 0;
+			list-style: none;
+			color: $white;
+			margin-bottom: 3.5rem;
+			font-size: 2.5rem;
+			line-height: 3rem;
+			// max-width: 320px;
+			&:nth-of-type(odd){
+				color: $spearmint-color-50;
+			}
+			&.scroller-fade-in{
+				opacity: 0;	
+				transition: all 300ms ease;
+				&.scroller-fade-in-complete{
+					opacity: 1;
+				}
+				
+			}
+			@media (min-width:768px) {
+				
+				margin-bottom: 2.5rem;
+				font-size: 40px;
+				max-width: 400px;
+				line-height: 48px;
+			}
+		}
+
+		&#slide-1-scrollers{
+			text-align: center;
+			@media (min-width:768px) {
+				text-align: right;
+			}
+			li {
+				margin-left: auto;
+				margin-right: 0;
+			}
+		}
+
+		&#slide-3-scrollers{
+			text-align: center;
+			@media (min-width:768px) {
+				text-align: left;
+			}
+			
+			li {
+				&:nth-of-type(odd){
+					color: $cayenne-color-50;
+				}
+			}
+		}
+	}
+
+	a.hash-link {
+		color: $white-color;
+		display: inline-block;
+		height: 2.875rem;                
+		text-align: center;
+		position: relative;
+
+		&:after {
+			content: "";
+			background-image: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1C9 0.447715 8.55228 2.41411e-08 8 0C7.44772 -2.41411e-08 7 0.447715 7 1L9 1ZM7.29289 17.7071C7.68342 18.0976 8.31658 18.0976 8.70711 17.7071L15.0711 11.3431C15.4616 10.9526 15.4616 10.3195 15.0711 9.92893C14.6805 9.53841 14.0474 9.53841 13.6569 9.92893L8 15.5858L2.34315 9.92893C1.95262 9.53841 1.31946 9.53841 0.928932 9.92893C0.538407 10.3195 0.538407 10.9526 0.928932 11.3431L7.29289 17.7071ZM7 1L7 17L9 17L9 1L7 1Z' fill='white'/%3E%3C/svg%3E%0A");
+			display: block;
+			width: 1rem;
+			height: 1.125rem;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+			background-size: 1rem 1.125rem;
+			background-repeat: no-repeat;
+		}
+	}
+	@media (max-width: 768px) {
+		#slide-0 .row {
+			padding-top: 4.5rem;
+		}
+		// .row {
+		// 	text-align: center;
+		// }
+	// 	h1, p.h1{
+	// 		font-size: 1.8rem;
+	// 	}
+	// 	ul.scroll-slides-alt-carousel--slide--scrollers{
+	// 		max-width: 200px;
+			
+	// 		li {
+	// 			font-size: 1rem;
+	// 		}
+
+	// 		&#slide-1-scrollers{
+	// 			margin-left: auto;
+	// 		}
+
+	// 		&#slide-3-scrollers{
+	// 			margin-left: 0%;
+	// 		}
+	// 	}
+	}
+}

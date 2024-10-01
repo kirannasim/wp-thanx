@@ -1,0 +1,427 @@
+/*--------------------------------------------------------------
+ * Industry Page
+ *-------------------------------------------------------------*/
+
+.industry-page {
+
+    /* Hero section */
+    .hero {
+        background-repeat: no-repeat;
+        background-size: cover;        
+        color: $white-color;
+        position: relative;
+        min-height: calc( 100vh - 90px );
+        display: flex;
+		align-items: center;
+		justify-content: center;		
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        z-index: 30;
+
+		@media (min-width:768px) {			
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+		}
+
+        .hero-content {
+            margin: 0 auto;
+            max-width: 55.375rem;
+            width: 100%;
+
+            h1 {
+                color: $white-color;
+                margin-bottom: 1.5rem;
+            }
+
+            .sub-text {
+                margin-bottom: 1.5rem;
+
+                a {
+                    color: $spearmint-color-50;
+                }
+            }
+
+            a.hash-link {
+                color: $white-color;
+                display: inline-block;
+                height: 2.875rem;                
+                text-align: center;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    background-image: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1C9 0.447715 8.55228 2.41411e-08 8 0C7.44772 -2.41411e-08 7 0.447715 7 1L9 1ZM7.29289 17.7071C7.68342 18.0976 8.31658 18.0976 8.70711 17.7071L15.0711 11.3431C15.4616 10.9526 15.4616 10.3195 15.0711 9.92893C14.6805 9.53841 14.0474 9.53841 13.6569 9.92893L8 15.5858L2.34315 9.92893C1.95262 9.53841 1.31946 9.53841 0.928932 9.92893C0.538407 10.3195 0.538407 10.9526 0.928932 11.3431L7.29289 17.7071ZM7 1L7 17L9 17L9 1L7 1Z' fill='white'/%3E%3C/svg%3E%0A");
+                    display: block;
+                    width: 1rem;
+                    height: 1.125rem;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translateX(-50%);
+					-webkit-transform: translateX(-50%);
+					background-size: 1rem 1.125rem;
+					background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    /* Intro section */
+    .intro-section {
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        padding-top: 2.875rem;
+        padding-bottom: 16.875rem;
+		position: relative;
+		z-index: 30;
+		@media (max-width:768px) {
+			background-image: none !important;
+		}
+        .intro-slider {
+            .slide {
+                padding-left: 4.625rem;
+
+                p, small {
+                    color:$grey-color-70;
+                }
+            }
+        }
+    }
+
+    /* Blocks section */
+    .industry-blocks {
+        .logos-block {
+            padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+			z-index: 20;
+			position: relative;
+			background-color: #fff;
+        }
+
+        .steps-block {
+			margin-top: -50vh;
+            padding-top: 3.125rem;
+			padding-bottom: 3.125rem;
+			
+			@media (max-width:768px) {
+				img {
+					max-height: 250px;
+					width: auto;
+				}
+
+				h2 {
+					font-size: 1.75rem;
+					line-height: 1.1;
+				}
+				p {
+					font-size: 1.3rem;
+					line-height: 1.2;
+				}
+
+			}
+			.step-content {
+				.row {
+					strong{
+						font-weight: 700;
+						letter-spacing: 1px;
+						color: $spearmint-color-60;
+					}
+					&:nth-of-type(2) {
+						strong {
+							color: $blue-color;
+						}
+					}
+				}
+			}
+        }
+
+        .testimonial-block {
+            .block-content {
+                border-top: 2px solid $grey-color-10;
+                border-bottom: 2px solid $grey-color-10;
+                padding-top: 4.5rem;
+                padding-bottom: 4.5rem;
+
+                blockquote {
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+					@media (min-width:768px) {
+						
+						font-size: 2.5rem;
+						line-height: 3rem;
+					}
+                    &:before {
+                        position: relative;
+                        left: 0;
+                    }
+                }
+
+                .publisher {
+                    margin-top: 3rem;
+                }
+            }
+        }
+
+        .customers-block {
+            padding-top: 6.5rem;
+
+			background: #fff;
+            h2 {
+                margin-bottom: 6.75rem;
+            }
+			.customer {
+			}
+        }
+
+        .food-fighters-block  {
+            // background: linear-gradient(180deg, $white-color 0%, $secondary 12.5%, $secondary 88.02%, $white-color 100%);
+            padding-top: 6.75rem;
+            padding-bottom: 7.375rem;
+			@media (min-width:768px) {
+				
+				padding-top: 12.75rem;
+				padding-bottom: 17.375rem;
+			}
+            .block-header {
+                border-bottom: 2px solid $dark-color-70;
+                padding-bottom: 7.5rem;
+            }
+
+            .block-body {
+                color: $white-color;
+                padding-top: 2.5rem;
+
+                .get-all-episodes {
+                    h2 {
+                        color: $white-color;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+
+                .top-episodes {
+                    padding-top: 4.5rem;
+
+                    .top-episodes-title {
+                        color: $white-color;
+                        font-weight: 500;
+                        font-size: 1.75rem;
+                        line-height: 2rem;
+                    }
+
+                    .episodes {
+                        .food_fighter {
+                            background-color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .resources-block {
+            padding-top: 7.5rem;
+            padding-bottom: 7.5rem;
+
+            .block-title {
+                margin-bottom: 4.5rem;
+            }
+
+            .resource-feature {
+                border-radius: 0.75rem;
+                box-shadow: 0 0.25rem 1.25rem rgba($secondary, 0.2);
+                -webkit-box-shadow: 0 0.25rem 1.25rem rgba($secondary, 0.2);       
+				background-color: #fff;        
+                display: flex;
+                align-items: stretch;
+                flex-direction: row;
+                overflow: hidden;  
+                max-height: 36.375rem;
+				@media (min-width:768px) {
+					border-radius: 1.5rem;
+				}
+                .feature-image {
+                    width: 50%;  
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-position: center;
+                        object-fit: cover;
+                        clip-path: polygon(0 0, 100% 0, calc(100% - 4rem) 100%, 0 100%);
+                        -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 4rem) 100%, 0 100%);      
+                    }
+                }
+
+                .feature-content {                    
+                    width: 50%;
+                    padding: 1.75rem;  
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+                    @media (min-width:768px) {
+						padding: 2.75rem;  
+					}
+                    p {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 2.5rem;
+					@media (min-width:768px) {
+						
+						margin-bottom: 7.5rem;
+					}
+                }
+
+                &:nth-child(2n) {
+                    .feature-image {
+                        order: 1;
+
+                        img {
+                            clip-path: polygon(4rem 0, 100% 0, 100% 100%, 0 100%);
+                            -webkit-clip-path: polygon(4rem 0, 100% 0, 100% 100%, 0 100%);      
+                        }
+                    }
+                }
+
+                @media screen and (max-width: 992px) {
+                    flex-direction: column;
+                    max-height: initial;
+
+                    .feature-image {
+                        width: 100%;
+                        order: 0 !important;
+                        max-height: 17.5rem;
+                        overflow: hidden;
+
+                        img {
+                            clip-path: initial !important;
+                            -webkit-clip-path: initial !important;     
+                        }
+                    }
+
+                    .feature-content {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .services-block {
+            padding-top: 7.5rem;
+            padding-bottom: 7.5rem;
+
+            .block-header {
+                border-bottom: 2px solid $grey-color-10;
+                padding-bottom: 1.5rem;
+            }
+
+            .block-body {
+                padding-top: 3rem;
+            }
+
+            .services {
+                margin-top: 4.5rem;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    flex: 0 0 33.33333%;
+                    max-width: 33.33333%;
+
+                    @media screen and (max-width: 992px) {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        .problem-block {
+            padding-top: 12.5rem;
+            padding-bottom: 15rem;
+
+            .ltv {
+                h3 {
+                    margin-bottom: 2.75rem;
+                }
+            }
+        }
+    }
+
+    &#industry_restaurants {
+        .hero {
+            .hero-content {
+                h5 {
+                    color: $cayenne-color-50;
+                }
+            }            
+        }
+    }
+
+    &#retail_service {
+        .hero {
+            .hero-content {
+                h5 {
+                    color: $gold-color-50;
+                }
+            }            
+        }
+
+        .services-block {
+            // background: linear-gradient(180deg, rgba($white-color, 0) 0%, $light-yellow-color 14.06%);
+            padding-bottom: 0;
+        }
+
+        .problem-block {
+            // background: linear-gradient(180deg, $light-yellow-color 86.98%, rgba($white-color, 0) 100%);
+
+            &:before {
+                content: "";
+                background-image: url("data:image/svg+xml,%3Csvg width='1248' height='496' viewBox='0 0 1248 496' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M103 36L90.5 42.0448C89.7857 42.409 88.9643 42.409 88.3214 42.0448L77.5714 36L81.8929 47.7983C82.1429 48.4902 82.0357 49.3277 81.5714 50.0196L74 62L86.5 55.8459C87.2143 55.4818 88.0357 55.4818 88.6786 55.8459L99.4286 62L95.1429 50.0196C94.8929 49.3277 95 48.4902 95.4643 47.7983L103 36Z' fill='%23E5CE6F'/%3E%3Cpath d='M1248 470L1235.5 476.045C1234.79 476.409 1233.96 476.409 1233.32 476.045L1222.57 470L1226.89 481.798C1227.14 482.49 1227.04 483.328 1226.57 484.02L1219 496L1231.5 489.846C1232.21 489.482 1233.04 489.482 1233.68 489.846L1244.43 496L1240.14 484.02C1239.89 483.328 1240 482.49 1240.46 481.798L1248 470Z' fill='%23E5CE6F'/%3E%3Cpath d='M1192 408L1184.67 411.487C1184.25 411.697 1183.77 411.697 1183.4 411.487L1177.09 408L1179.63 414.807C1179.77 415.206 1179.71 415.689 1179.44 416.088L1175 423L1182.33 419.45C1182.75 419.239 1183.23 419.239 1183.6 419.45L1189.91 423L1187.39 416.088C1187.25 415.689 1187.31 415.206 1187.58 414.807L1192 408Z' fill='%23E5CE6F'/%3E%3Cpath d='M16 0L9.10345 3.2549C8.70936 3.45098 8.25616 3.45098 7.90148 3.2549L1.97044 0L4.35468 6.35294C4.49261 6.72549 4.4335 7.17647 4.17734 7.54902L0 14L6.89655 10.6863C7.29064 10.4902 7.74384 10.4902 8.09852 10.6863L14.0296 14L11.665 7.54902C11.5271 7.17647 11.5862 6.72549 11.8424 6.35294L16 0Z' fill='%23E5CE6F'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-size: initial;
+                background-position: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .ltv {
+                .formula {
+                    background-color: $gold-color-10;
+                }
+            }
+        }
+    }
+
+    &#malls {
+        .hero {
+            .hero-content {
+                h5 {
+                    color: $orange-color-40;
+                }
+            }            
+        }
+
+		.customer-quote .block-content {
+			background-color: #fff;
+			border-radius: 1.5rem;
+			box-shadow: 0 0.25rem 1.25rem rgba($secondary, 0.2);
+			.thumbnail:before {
+				background-color: $grey-color-60;
+			}
+		}
+
+
+        .services-block {
+            // background: linear-gradient(180deg, rgba($white-color, 0) 0%, $gold-color-20 14.06%, $gold-color-20 85.42%, rgba($white-color, 0) 100%);
+        }
+    }
+
+}

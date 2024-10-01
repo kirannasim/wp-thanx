@@ -1,0 +1,40 @@
+<svg width="1440" height="904" viewBox="0 0 1440 904" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1440" height="904" fill="url(#paint0_linear)"/>
+<path d="M219 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M277.941 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M336.883 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M395.824 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M454.766 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M513.707 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M572.648 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M631.59 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M690.531 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M749.469 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M808.41 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M867.352 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M926.293 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M985.234 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M1044.18 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M1103.12 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M1162.06 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M1221 105V799" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 480L163 480" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 533L163 533" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 586L163 586" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 639L163 639" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 692L163 692" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 745L163 745" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 162L163 162" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 215L163 215" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 268L163 268" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 321L163 321" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 374L163 374" stroke="#143F63" stroke-width="2"/>
+<path d="M1277 427L163 427" stroke="#143F63" stroke-width="2"/>
+<rect x="163" y="106" width="1113" height="692" stroke="#143F63" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear" x1="720" y1="0" x2="720" y2="904" gradientUnits="userSpaceOnUse">
+<stop stop-color="#071520"/>
+<stop offset="1" stop-color="#071520"/>
+</linearGradient>
+</defs>
+</svg>

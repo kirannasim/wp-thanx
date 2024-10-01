@@ -1,0 +1,51 @@
+@import "theme/child_theme_variables";                   // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap4";                             // <------- Loads Bootstrap4
+@import "../src/sass/understrap/understrap/understrap";  // <------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+// @import "../src/sass/understrap/understrap/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome";                           // <------- Font Awesome Icon font
+@import "assets/underscores";                            // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme";                             // <------- Add your styles into this file
+@import "../src/sass/understrap/theme/contact-form7";    // <------- Loads some basic styling for contact form 7 plugin
+
+// Owlcarousel
+@import "../src/sass/owlcarousel/owl.carousel.min.css";
+@import "../src/sass/owlcarousel/owl.theme.default.min.css";
+
+// Simplebar
+@import "../node_modules/";
+
+// Magnific Popup
+@import "../node_modules/magnific-popup/dist/magnific-popup.css";
+
+// Page templates //
+@import "theme/page/front_page";
+@import "theme/page/contact_page";
+@import "theme/page/request_demo_page";
+@import "theme/page/get_app_page";
+@import "theme/page/about_page";
+@import "theme/page/career_page";
+@import "theme/page/customer_story_page";
+@import "theme/page/why_thanx_page";
+@import "theme/page/platform_page";
+@import "theme/page/platform_sub_page";
+@import "theme/page/playbook_page";
+@import "theme/page/industry_page";
+@import "theme/page/partners_page";
+@import "theme/page/digital_maturity_page";
+
+@import "theme/header";
+@import "theme/footer";
+@import "theme/nav";
+@import "theme/page";
+@import "theme/page_header";
+@import "theme/page_footer";
+@import "theme/post";
+@import "theme/button";
+@import "theme/form";
+@import "theme/modal";
+@import "theme/404";
+@import "theme/sliders";

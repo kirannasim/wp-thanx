@@ -1,0 +1,164 @@
+/* Page header */
+.header-type-transparent + .page-header {
+	
+	padding-top: 8.5rem;
+}
+.page-header {
+    background-image: linear-gradient(180deg, $light-blue-color 0%, $white-color 100%);
+    background-repeat: no-repeat;
+    background-color: $white-color;
+    background-size: cover;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+	@media (min-width:768px) {
+		padding-top: 8.5rem;
+		padding-bottom: 4rem;
+	}
+    position: relative;
+
+    h2.page-header-title {   
+        font-weight: 600;
+        font-size: 3rem;
+		line-height: 3.5rem;
+		
+		mark,
+		mark:before,
+        span {
+            color: $spearmint-color-60;
+        }
+    }    
+
+    .intro-content {
+        width: 100%;
+        max-width: 40.75rem;
+        margin: 0 auto;
+
+        &.wide {
+            max-width: none;
+        }
+    }
+
+    &.page-header-light {
+        .page-header-title {
+            color: $secondary;
+        }
+
+        p, h1, h2, h3, h4, h5, h6 {
+            color: $grey-color-70;
+        }
+    }
+
+    &.page-header-dark {        
+        .page-header-title {
+            color: $white-color;
+        }
+
+        p, h1, h2, h3, h4, h5, h6 {
+            color: $grey-color-10; 
+        }
+    }
+
+    &.archive-header {
+        background: linear-gradient(180deg, #FBF8EC 0%, $white-color 100%);
+        padding-top: 11.25rem;
+        padding-bottom: 3.75rem;
+
+        &.page-header-food_fighter {
+            padding-top: 9.25rem;
+            padding-bottom: 9.25rem;
+
+            .intro-content {
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &.post-header {        
+        &.page-header-food_fighter {
+            padding-top: 5.25rem;
+            padding-bottom: 5.375rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &.page-header-food_fighter {
+        background-image: url(../images/episode_banner_bg.jpg);
+		background-size: cover;
+        
+        h2 {
+            max-width: 40.625rem;
+            margin: 0 auto;
+        }
+
+        .entry-title {
+            color: $cayenne-color-50;
+            font-family: $primary-font;    
+            font-weight: 700;
+            font-size: 1.75rem;
+            line-height: 1;        
+            text-transform: uppercase;
+            margin-top: 0.625rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &.is-border {
+        &:after {
+            content: "";
+            position: absolute;
+            left: 2.8125rem;
+            right: 2.8125rem;
+            bottom: 0;
+            border-bottom: 2px solid $grey-color-10;
+        }        
+    }
+}
+
+/* custom page template header */
+.page-template {
+    .page-header {
+        padding-top: 7.25rem;
+        padding-bottom: 2.125rem;
+		@media (min-width:768px) {
+			
+			padding-top: 11.25rem;
+			padding-bottom: 7.125rem;
+		}
+        .page-header-title {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;            
+        }    
+    
+        img.page-header-logo {
+            margin-bottom: 0.875rem;
+        }
+
+        h4 {
+            font-family: $primary-font;    
+            font-weight: 300;
+            line-height: 2.25rem;
+        }
+    
+        h5 {
+            font-family: $secondary-font;
+            font-weight: 400;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+
+body.page-template-resources-page .page-content,
+body.page-template-resources-page .page-content .grid-section,
+body.post-type-archive-food_fighter .page-content{
+	padding-top: 0;
+}
+
+body.page-template-resources-page .page-content {
+	padding-bottom: 0;
+}

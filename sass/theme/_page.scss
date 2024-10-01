@@ -1,0 +1,275 @@
+/*--------------------------------------------------------------
+ * Page
+ *-------------------------------------------------------------*/
+.wrapper {
+    padding: 0 1.375rem;
+	@media (min-width:768px) {
+		padding: 0 2.8125rem;
+        max-width: 1440px;
+        margin: 0 auto;
+	}
+}
+
+/* page content */
+.page-content {    
+    padding-top: 4rem;
+    padding-bottom: 7.5rem;
+
+    .page {
+        max-width: 40.75rem;        
+        margin: 0 auto;
+        width: 100%;        
+
+        .questions-content {
+            background-color: $light-blue-color;
+            padding: 3rem;
+            margin-top: 4rem;
+
+            p, a {
+                font-family: $primary-font;
+                font-weight: 300;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .page-form {
+        background: #F5F5F5;
+        box-shadow: 0px 0.125rem 0.375rem rgba($secondary, 0.25);
+        padding: 1rem;
+        padding-bottom: 3rem;
+		@media (min-width:768px) {	
+			padding: 2.8125rem;
+		}
+		@media (max-width:768px) {
+			margin-top: 1rem;
+		}
+    }
+
+    &.full-width {
+        .page {        
+            max-width: 100%;
+        }
+    }
+
+    &.boxed-width {
+        .page {
+            max-width: 40.75rem;
+        }
+    }
+
+    &.extended-width {
+        .page {
+            max-width: 55.375rem;
+        }
+    }
+}
+
+.section {
+    .section-sub-title {        
+        &.v1 {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-top: 0.5rem;  
+        }
+
+        &.v2 {
+            color: $spearmint-color-60;
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 1.75rem;
+            line-height: 2rem;
+            letter-spacing: 0.25px; 
+            margin-top: 0;           
+            margin-bottom: 1rem;
+        }
+
+        &.v3 {
+            color: $spearmint-color-60;
+            font-family: $primary-font;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+
+    .section-subtext {
+        color: $grey-color-70;
+        margin-top: 1rem;
+        text-align: center;            
+    }
+
+    &.newsletter {
+        background-color: $grey-color-5;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    
+        .section-title {
+            font-family: $primary-font;
+            font-weight: bold;
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+    
+        .section-sub-title {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: center;
+			margin-bottom: 1.5rem;
+			color: $grey-color-70;
+        }
+    
+        .newsletter-input-group {
+            justify-content: center;
+    
+            input[type="email"] {
+                background: $white-color;
+                border: 2px solid $grey-color-10;
+                box-sizing: border-box;
+                border-radius: 2px 0px 0px 2px;
+                font-family: $secondary-font;
+                font-weight: 400;
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                height: 2.5rem;
+                max-width: 15rem;
+                padding: 0.375rem 0.625rem;
+    
+                &:focus {
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                }
+            }
+        
+            .wysija-submit {
+                background: $primary;
+                border-color: $primary;
+                border-radius: 0px 2px 2px 0px;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                font-family: $primary-font;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1rem;
+                height: 2.5rem;
+                padding: 12px 15px;
+				padding: .375rem .625rem;
+                display: block;
+    
+                &:hover {
+                    background: $primary;
+                    border-color: $primary;
+                }
+            }
+        }
+    
+        &.primary-submit-btn {
+            .wysija-submit {
+                background: $primary;
+                border-color: $primary;
+    
+                &:hover {
+                    background: $spearmint-color-30;
+                    border-color: $spearmint-color-30;
+                    color: $secondary;
+                }
+            }
+        }
+    
+        &.orange-submit-btn {
+            .wysija-submit {
+                background: $cayenne-color-50;
+                border-color: $cayenne-color-50;
+    
+                &:hover {
+                    background: rgba($cayenne-color-50, 0.7);
+                    border-color: rgba($cayenne-color-50, 0.7);
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+.newsletter + .grid-section {
+	padding-top: 4.5rem;
+}
+
+.grid-section {
+    // 
+    padding-bottom: 4.5rem;    
+
+    .grid-posts {
+        &.row {
+            margin-left: -1.375rem;
+            margin-right: -1.375rem;
+
+            [class^="col-"], [class*=" col-"] {
+                padding-left: 1.375rem;
+                padding-right: 1.375rem;
+            }
+		}
+		
+		article {
+			.entry-content{
+				font-weight: 300;
+				color: $body-color;
+				p {
+					font-weight: 300;
+					color: $body-color;
+				}
+			}
+		}
+    }
+}
+
+.page-template-default {
+    .page-content {
+        p {
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+    
+            &.big {
+                font-family: $primary-font;
+                font-weight: 300;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+            }
+        }
+    
+        ul, ol {
+            padding-left: 1.1875rem; 
+            margin-bottom: 1rem;
+    
+            li {
+                font-family: $secondary-font;
+                font-weight: 400;
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                padding-left: 0.875rem;
+				margin-bottom: 1rem;
+            }
+        }
+    
+        ul {
+            li {
+                list-style: initial;
+            }
+        }
+    }    
+}

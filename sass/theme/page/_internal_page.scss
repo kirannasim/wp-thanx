@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+ * Internal Page
+ *-------------------------------------------------------------*/
+
+.internal-page {
+    .grid-section {
+        .section-subtext {
+            max-width: 55.25rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    .page-content {
+        position: relative;
+
+        &:after {
+            content: "";
+            border-bottom: 2px solid $grey-color-10;
+            position: absolute;
+            left: 2.8125rem;
+            right: 2.8125rem;            
+        }        
+    }
+}

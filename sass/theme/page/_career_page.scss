@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+ * Career Page
+ *-------------------------------------------------------------*/
+
+.career-page {
+    &.page-template {
+        .page-header {
+            padding-top: 12rem;
+            padding-bottom: 7.5rem;
+            
+            .page-header-title {
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 3.5rem;
+                letter-spacing: 0.25px;
+                text-transform: initial;
+                margin-bottom: 1.5rem;
+				@media (min-width:768px) {
+				
+					font-size: 4rem;
+					line-height: 4.5rem;	
+				}
+            }
+        }
+    }
+
+    .our-story {
+        border-top: 2px solid $grey-color-10;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+		@media (min-width:768px) {
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+			
+		}
+    }
+
+    .our-team {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+		@media (min-width:768px) {
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+		}
+
+        .section-title {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-bottom: 2.75rem;
+        }
+    }
+
+    .our-core-behavior {
+        background: $light-blue-color;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+		@media (min-width:768px) {
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+		}
+        .our-core-behavior-header {
+            border-bottom: 2px solid rgba($secondary, 0.15);
+            padding-bottom: 1.5rem;
+
+            .section-title {
+                color: $spearmint-color-50;
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: 1.25rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1.5rem;
+                line-height: 2.25rem;                
+            }
+        }
+    }
+
+    .services {
+        padding-top: 4.875rem;
+    }
+}

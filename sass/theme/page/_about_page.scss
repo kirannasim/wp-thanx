@@ -1,0 +1,296 @@
+/*--------------------------------------------------------------
+ * About Page
+ *-------------------------------------------------------------*/
+
+.about-page {
+    &.page-template {
+        .page-header {
+			background-image: none;
+			background-color: transparent;
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
+            @mixin name {
+				
+				padding-top: 7.5rem;
+				padding-bottom: 7.5rem;
+			}
+            .page-header-title {
+                font-weight: 600;
+                font-size: 4rem;
+                line-height: 4.5rem;
+                letter-spacing: 0.25px;
+                text-transform: initial;
+            }
+
+            .intro-content {
+                max-width: 69.75rem;
+            }
+        }
+	}
+	
+	.team .team-content p {
+		font-family: $secondary-font;
+	}
+
+    .what-we-do {
+		padding-top: 3.5rem;
+		padding-bottom: 3.5rem;
+		@mixin name {
+			
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+		}
+        .section-wrapper {
+            max-width: 51.125rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    .our-vision {
+        // background-color: $light-blue-color;
+        padding-bottom: 1.25rem;
+
+        .our-vision-wrapper {
+            background-color: $white-color;
+            border-radius: 1.5rem;
+            box-shadow: 0px 0.25rem 1.25rem rgba($secondary, 0.2);
+
+            .our-vision-author {
+                background-image: url(../images/out_vision_bg.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 1.5rem 1.5rem 0 0 ;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                position: relative;                
+
+                img {
+                    border-radius: 1.5rem 1.5rem 0 0 ;
+                    margin-top: -1.5rem;
+                }  
+				
+				@media (min-width:768px) {
+                    border-radius: 1.5rem 0 0 1.5rem;	
+					img {
+						border-radius: 1.5rem 0 0 1.5rem;
+						margin-top: -1.5rem;
+					}
+				}              
+            }
+
+            .our-vision-content {
+                padding: 2rem 1.5rem;
+				@media (min-width:768px) {
+					padding: 6.125rem 2rem;
+				}
+                h5 {
+                    margin-bottom: 1.5rem;
+                }
+    
+                .author {
+                    color: rgba($secondary, 0.8);
+                    font-family: $primary-font;
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                }
+
+                blockquote {
+					mark,
+					mark:before,
+                    span {
+                        background-color: $spearmint-color-20;
+                    }
+                }
+            }           
+        }
+    }
+
+    .why-we-do {
+        // background: linear-gradient(360deg, $white-color 0%, $light-blue-color 100%);
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+
+        .section-sub-title {
+            margin-bottom: 3rem;
+        }
+
+        .why-we-do-list {
+            li {
+                border-top: 2px solid $grey-color-10;
+                padding-right: 2.5rem;
+                position: relative;
+
+				a {
+					       
+					display: flex;        
+					min-height: 7.5rem;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					align-items: flex-start;
+					color: #424A51;
+                }
+                
+                &:last-child {
+                    border-bottom: 2px solid $grey-color-10;
+                }
+
+                &:after {
+                    content: "";
+                    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.25184 17.9393C0.666053 18.5251 0.666053 19.4749 1.25184 20.0607C1.83763 20.6464 2.78737 20.6464 3.37316 20.0607L1.25184 17.9393ZM20.8125 2C20.8125 1.17157 20.1409 0.5 19.3125 0.5L5.8125 0.499999C4.98407 0.499999 4.3125 1.17157 4.3125 2C4.3125 2.82843 4.98407 3.5 5.8125 3.5H17.8125V15.5C17.8125 16.3284 18.4841 17 19.3125 17C20.1409 17 20.8125 16.3284 20.8125 15.5L20.8125 2ZM3.37316 20.0607L20.3732 3.06066L18.2518 0.939339L1.25184 17.9393L3.37316 20.0607Z' fill='%2313C1BF'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 1.3125rem;
+                    height: 1.3125rem;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transition: all 0.2s ease-in-out;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    transform: translateX(0) translateY(-50%);
+                    -webkit-transform: translateX(0) translateY(-50%);
+                }
+
+                img {
+                    width: 4rem;
+                    height: auto;
+                    margin-right: 1.875rem;
+                }
+
+                span {
+                    font-family: $primary-font;
+                    font-weight: 500;
+                    font-size: 1.75rem;
+                    line-height: 2rem;
+                    letter-spacing: 0.25px;
+                }
+
+                &:hover {
+                    &:after {
+                        transform: translateX(0.5rem) translateY(calc(-50% - 0.5rem));
+                        -webkit-transform: translateX(0.5rem) translateY(calc(-50% - 0.5rem));
+                    }
+                }
+            }
+        }
+
+        .why-we-do-content {
+            p {
+                font-family: $primary-font;
+                font-weight: 300;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .leading-the-charge {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+		@media (min-width:768px) {
+			padding-top: 7.5rem;
+			padding-bottom: 7.5rem;
+			
+		}
+        .section-sub-title {
+            margin-bottom: 2.8125rem;
+        }
+    }
+
+    .advised {
+        margin-bottom: 8.75rem;
+
+        .section-wrapper {
+            background-color: $spearmint-color-90;
+            color: $white-color;
+			padding: 3rem 1rem;
+			@media (min-width:768px) {
+				
+				padding: 6rem 2.8125rem;
+			}
+            p {
+                font-family: $primary-font;
+                font-weight: 300;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+            }
+
+            a {
+                color: $spearmint-color-50;
+            }            
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+
+        .advised-featured {
+            margin-bottom: 1.5rem;
+        }
+
+        .advisors-members {
+            li {
+                border-top: 2px solid $spearmint-color-50;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                height: 4rem; 
+				padding-right: 2.125rem;  
+
+                .name {
+					color: $white;
+					text-transform: capitalize;
+					flex-basis: 35%;
+					font-weight: 500;
+					a {
+						color: $spearmint-color-50; 
+						text-transform: capitalize;
+						font-weight: 500;
+					}
+                                       
+                }
+                
+                .role {
+                    color: $spearmint-color;
+                    font-size: 1.5rem;
+                    line-height: 2.25rem;
+                }
+
+                &:hover {
+                    .name {
+						a {
+							color: $white-color;
+						}
+                        
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: 2px solid $spearmint-color-70;
+                }
+				
+				@media ( max-width: 768px) {
+					flex-wrap: wrap;
+					height: auto;
+					padding-top: 0.3rem;
+					padding-bottom: 0.3rem;
+					.name{
+						flex-basis: 100%;
+					}
+					.role {
+						font-size: 1rem;
+					}
+				}
+            }        
+        }
+    }    
+}

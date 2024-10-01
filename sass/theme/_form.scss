@@ -1,0 +1,261 @@
+/*--------------------------------------------------------------
+ * Form controls
+ *-------------------------------------------------------------*/
+
+select {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.77937 6.36536L11.4362 1.7085C12.0662 1.07854 11.62 0.00139652 10.7291 0.00139652L1.41541 0.00139678C0.524509 0.00139678 0.0783425 1.07854 0.708307 1.7085L5.36516 6.36536C5.75568 6.75589 6.38885 6.75589 6.77937 6.36536Z' fill='%23071520'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 0.625rem center;
+    border: 2px solid $secondary;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: 0.25px;
+    width: 12.5rem;
+    padding: 0.5rem 1.875rem 0.5rem 0.625rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+
+    & > .col, & > [class*=col-] {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+.form-control {
+    border: 2px solid $grey-color-10;
+    border-radius: 0.25rem; 
+    color: $grey-color;
+    font-family: $primary-font;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1;
+    height: auto;
+    padding: 1rem;
+
+    &:focus {
+        border-color: $secondary;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+.contact-form-modal:not(.modal-light-form) {
+    .form-control {
+        border: none;
+        border-radius: 0.125rem; 
+        font-family: $secondary-font;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .wpcf7 {            
+        input[type=color], 
+        input[type=date], 
+        input[type=datetime-local], 
+        input[type=datetime], 
+        input[type=email], 
+        input[type=file], 
+        input[type=month], 
+        input[type=number], 
+        input[type=range], 
+        input[type=search], 
+        input[type=tel], 
+        input[type=text], 
+        input[type=time], 
+        input[type=url], 
+        input[type=week], 
+        textarea {
+            background: rgba($white-color, 0.3);            
+            color: $grey-color-10;
+        }
+
+        textarea {
+            height: 7rem;
+        }
+
+        input[type=submit] {
+            background: $cayenne-color-50;
+            box-shadow: 0px 4px 16px rgba(7, 21, 32, 0.2), 0px 3px 14px #FF9C82;
+            border-radius: 2px;
+            color: $secondary;
+            padding: 1rem 1.5rem;
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1;
+            width: auto;
+        }
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus textarea:-webkit-autofill,
+		textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+		select:-webkit-autofill,
+		select:-webkit-autofill:hover,
+		select:-webkit-autofill:focus {
+			-webkit-box-shadow: 0 0 0px 1000px $grey-color-60 inset !important;
+			color: $grey-color-10 !important;
+		}
+
+        .wpcf7-not-valid-tip {
+            color: $cayenne-color-50;
+        }
+
+        form.invalid .wpcf7-response-output, 
+        form.unaccepted .wpcf7-response-output {
+            border-color: $cayenne-color-50;
+            color: $grey-color-10;               
+            margin: 0 0 1rem;
+		}
+    }
+}
+
+.wpcf7 {
+    textarea {        
+        resize: none;
+    }
+	@media (max-width:768px) {
+		
+		.form-row .form-group.col-6 {
+			width: 100%;
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+	}
+    .wpcf7-form p {
+        margin-bottom: 0;
+        line-height: 1;
+        text-align: right;
+
+        &.note {
+            color: $grey-color-70;
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1rem;
+            margin-top: 0.5rem;
+            text-align: left;
+        }
+    }
+
+    .ajax-loader {
+        display: block !important;
+		position: absolute;
+		z-index: 10;
+		right: 10px;
+		top: 0;
+    }
+
+    input[type=submit] {
+        border: 2px solid transparent;
+        border-radius: 2px;
+        color: $secondary;
+        font-family: $primary-font;    
+        font-weight: 500;
+        line-height: 1;
+        position: relative;
+        overflow: hidden;   
+        z-index: 1;
+        -webkit-transition: background-color .3s cubic-bezier(.5, 0, .1, 1), color .3s cubic-bezier(.5, 0, .1, 1), border-color .3s cubic-bezier(.5, 0, .1, 1);
+        transition: background-color .3s cubic-bezier(.5, 0, .1, 1)color .3s cubic-bezier(.5, 0, .1, 1), border-color .3s cubic-bezier(.5, 0, .1, 1);
+        will-change: background-color, color, border-color;
+
+        &.btn-primary {
+            background: $primary;
+            border-color: $primary;
+            box-shadow: 0px 4px 16px rgba(7, 21, 32, 0.2), 0px 3px 14px rgba(0, 255, 252, 0.4);  
+            -webkit-box-shadow: 0px 4px 16px rgba(7, 21, 32, 0.2), 0px 3px 14px rgba(0, 255, 252, 0.4);    
+            color: $secondary;
+
+            &:hover {
+                background: $white-color;
+                border-color: $primary;
+                color: $primary;
+            }
+        }
+
+        &.btn-secondary {
+            background: $white-color;
+            border-color: $white-color;
+            color: $secondary;
+
+            &:hover {
+                background: $white-color;
+                border-color: $white-color;
+                color: $secondary;
+            }
+        }
+
+        &.btn-orange {
+            background: $cayenne-color-50;
+            border-color: $cayenne-color-50;
+            color: $secondary;
+
+            &:hover {
+                background: $white-color;
+                border-color: $cayenne-color-50;
+                color: $cayenne-color-50;
+            }
+        }
+    }
+}
+
+.single-post-form {
+    background: $grey-color-5;
+    box-shadow: 0px 2px 6px rgba($secondary, 0.25);
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 40.75rem;
+    width: 100%;
+	@media (min-width:768px) {
+	
+		padding: 2.8125rem;	
+	}
+    .wpcf7 .wpcf7-form {
+		@media (max-width:768px) {
+			margin-top: 1rem;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+    .terms-conditions {
+        max-width: 24.375rem;
+        margin: 2.5rem auto 0;
+
+        p {
+            color: $grey-color;
+            font-family: $secondary-font;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1rem;
+            margin-bottom: 1rem;            
+        }
+    }
+}
+
+

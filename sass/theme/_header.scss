@@ -1,0 +1,145 @@
+/*--------------------------------------------------------------
+ * Header
+ *-------------------------------------------------------------*/
+ #header-wrapper {
+    background-color: transparent;
+    width: 100%;
+    z-index: 99;
+
+    &.header-type-transparent {
+        @media screen and (max-width: 767px) {
+            position: absolute;
+        }
+    }
+
+
+    &.header-type-fixed {
+        position: relative;
+    }
+
+    &:not(.header-type-transparent),
+    &.scrolling {
+        &.header-light {
+            background-color: $white-color;
+        }
+
+        &.header-dark {
+            background-color: $dark-color-70;
+        }
+    }
+    
+
+
+
+    @media only screen and (min-width: 768px) {
+		&.header-type-fixed {
+			position: fixed;
+		}
+		position: fixed;	
+		transition: all 1s ease-in-out;
+		-webkit-transition: all 1s ease-in-out;
+		top: 0;
+		// &.header-init{
+		// 	position: fixed !important;
+		// }
+        &.scrolling {
+            position: fixed;
+            width: 100%;
+
+            &.is-hidden {
+                top: -8.2rem;
+            }
+
+            &.is-visible {
+                top: 0;
+            }
+        }
+    }
+}
+
+// body.page-template-front-page{
+// 	#header-wrapper {
+// 		&.scrolling{
+// 			position: absolute;
+// 		}
+// 	}
+// }
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.wrapper {
+        padding: .5rem 2.8125rem 0;
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+
+            padding: 0.875rem 1.5rem;
+        }
+    }   
+}
+
+.navbar-brand {
+    padding: 0;
+    margin-right: 2.5rem;
+}
+
+.navbar-toggler {
+    @media only screen and (min-width: 767px) {
+        display: none;
+    }
+}
+
+.header-left {
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        flex-direction: column;
+		flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        width: 108px;   
+        margin-bottom: 1.25rem;
+
+        @media only screen and (max-width: 991px) {
+            margin-right: 0;
+        }
+    }
+
+    .site-logo {
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.header-right {
+    width: 100%;
+    background: transparent !important;
+}
+
+@media only screen and (min-width: 768px) {
+	body.header-type-fixed{
+		margin-top: 72px;
+		
+	}
+	// body.header-banner-shown #header-wrapper{
+	// 	top: 40px
+	// }
+}
+
+
+
+body.header-banner-shown.header-type-transparent .hero,
+body.header-banner-shown.header-type-transparent .page-header {
+	padding-top: 10rem;
+}

@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+ * Platform Page
+ *-------------------------------------------------------------*/
+
+.platform-page {
+
+    /* Hero section */
+    .hero {
+        padding-top: 6.625rem;    
+		@media (min-width:768px) {
+			padding-top: 8.625rem; 
+		}
+        h1 {
+			margin-bottom: 6.375rem;
+			mark,
+			mark:before,
+            span {
+                color: $spearmint-color-60;
+            }
+        }
+    }
+	
+	.tabs {
+		min-width: 560px;
+		@media( max-width:768px ){
+			// flex-wrap: wrap;
+		}
+	}
+	.filter-select{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width: 100%;
+		line-height: 1.25;
+		font-size: 16px;
+		&:focus{
+			font-size: 16px;
+		}
+	}
+    /* Platform Content */
+    .platforms {
+        .feature {
+            &:last-child {
+                padding-bottom: 7.5rem;
+            }
+        }   
+
+        .section-sub-title {
+            color: $spearmint-color-60;
+        }
+
+        .section-title {
+            font-weight: 300;
+            font-size: 2.25rem;
+            line-height: 3rem;
+
+            span {
+                color: $grey-color-50;
+            }
+        }
+    }    
+    
+}
